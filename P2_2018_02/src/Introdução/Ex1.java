@@ -10,6 +10,9 @@ public class Ex1 {
 		// Preenchendo a Matriz
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz.length; j++) {
+				/*matriz[i][j] = min + 
+						(int) (Math.random() *
+								((max - min) + 1));*/
 				matriz[i][j] = Util.geraIntAleatorio(min, max);
 			}
 		}
@@ -26,12 +29,5 @@ public class Ex1 {
 		
 	}
 
-	public static int soma(int num1, int num2) {
-		int result = num1 + num2;
-		return result;
-	}
-	
-	
-	
 	
 }

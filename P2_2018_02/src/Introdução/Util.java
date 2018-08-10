@@ -2,7 +2,11 @@ package Introdução;
 
 public class Util {
 	public static int geraIntAleatorio(int min, int max) {
-		int intAleatorio = min + (int) (Math.random() * ((max - min) + 1));
-		return intAleatorio;
+		int numAleatorio = min + (int) 
+				(Math.random() * 
+						((max - min) + 1));
+
+		return numAleatorio;
+
 	}
 }

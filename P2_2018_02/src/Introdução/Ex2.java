@@ -6,5 +6,4 @@ public class Ex2 {
 		int aleatorio = Util.geraIntAleatorio(min, max);
 		System.out.println(aleatorio);
 	}
-
 }
