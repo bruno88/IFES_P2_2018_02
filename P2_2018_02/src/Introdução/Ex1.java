@@ -1,5 +1,7 @@
 package Introdução;
 
+import Util.Util;
+
 public class Ex1 {
 	public static void main(String[] args) {
 		final int min = 1, max = 10, ordem = 5;

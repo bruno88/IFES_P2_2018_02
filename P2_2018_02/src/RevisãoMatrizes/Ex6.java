@@ -1,6 +1,6 @@
 package RevisãoMatrizes;
 
-import Introdução.Util;
+import Util.Util;
 
 public class Ex6 {
 	public static void main(String[] args) {

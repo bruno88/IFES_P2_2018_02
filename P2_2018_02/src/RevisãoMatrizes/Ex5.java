@@ -2,7 +2,7 @@ package RevisãoMatrizes;
 
 import java.util.Scanner;
 
-import Introdução.Util;
+import Util.Util;
 
 public class Ex5 {
 	public static void main(String[] args) {
