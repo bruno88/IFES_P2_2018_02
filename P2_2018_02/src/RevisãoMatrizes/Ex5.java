@@ -17,7 +17,7 @@ public class Ex5 {
 
 		// Criamos e instanciamos matriz
 		int[][] matriz = new int[ordem][ordem];
-		int[][] matrizNova = new int[ordem][ordem];
+		//int[][] matrizNova = new int[ordem][ordem];
 
 		// Populando a Matriz
 		for (int i = 0; i < ordem; i++) {

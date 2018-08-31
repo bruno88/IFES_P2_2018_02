@@ -1,9 +1,8 @@
-package Util;
+package Metodos;
 
 public class Util {
 	public static int geraIntAleatorio(int min, int max) {
-		int numAleatorio = min + 
-				(int) (Math.random() * ((max - min) + 1));
+		int numAleatorio = min + (int) (Math.random() * ((max - min) + 1));
 
 		return numAleatorio;
 
@@ -85,8 +84,7 @@ public class Util {
 		return mediaPond;
 	}
 
-	public static void getVetorIntAleatorio(int[] vetor,
-					int min, int max) {
+	public static void getVetorIntAleatorio(int[] vetor, int min, int max) {
 		// Popula o vetor com aleatórios de min a max
 		for (int i = 0; i < vetor.length; i++) {
 			vetor[i] = Util.geraIntAleatorio(min, max);
@@ -110,7 +108,7 @@ public class Util {
 		for (int i = 0; i < vetor.length - 1; i++) {
 			int index = i;
 			for (int j = i + 1; j < vetor.length; j++) {
-				if (vetor[j] <= vetor[index])
+				if (vetor[j] < vetor[index])
 					index = j;
 			}
 			int menorValor = vetor[index];
@@ -138,21 +136,11 @@ public class Util {
 		}
 		System.out.println(result);
 	}
-	
-	public static void imprimeVetorStr(String[] vetor) {
-		String result = "";
-
-		for (int i = 0; i < vetor.length; i++) {
-			result += vetor[i] + " ";
-		}
-		System.out.println(result);
-
-	}
 
 	public static int[] getNumerosRepetidos(int[] vetor) {
 		int qtd = 0;
 		boolean isRepetido = false, isOnArray = false;
-		int[] repetidos = new int[vetor.length/2];
+		int[] repetidos = new int[vetor.length];
 
 		for (int i = 0; i < vetor.length; i++) {
 			isRepetido = Util.isRepetidoInt(vetor, vetor[i]);

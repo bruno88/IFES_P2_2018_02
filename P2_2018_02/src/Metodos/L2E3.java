@@ -4,7 +4,7 @@ import Util.Util;
 
 public class L2E3 {
 	public static void main(String[] args) {
-		final int horas = 5;
+		final int horas = 1;
 
 		int minutos = Util.getMinutosFromHoras(horas);
 		System.out.println(Util.getMinutosFromHoras(horas));
