@@ -32,6 +32,7 @@ public class L3E1 {
 			
 			// Imprime maiores
 			Util.imprimeVetorInt(maiores);
+			
 		} catch (Exception e) {
 			System.out.println("Ocorreu um erro no processamento");
 		}

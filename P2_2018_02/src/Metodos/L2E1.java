@@ -3,6 +3,7 @@ package Metodos;
 import java.util.Scanner;
 
 import Util.Util;
+import Util.UtilERRADO;
 
 public class L2E1 {
 	public static void main(String[] args) {
@@ -24,17 +25,17 @@ public class L2E1 {
 			switch (op) {
 			case "A":
 				//media = Util.calculamediaarit(9,2, 6);
-				media = Util.calculaMediaArit(vetor);
+				media = UtilERRADO.calculaMediaArit(vetor);
 				saida = "Média Aritmética = " + media;
 				break;
 			case "P":
 				//media = Util.calculaMediaPond(2,9,1);
-				media = Util.calculaMediaPond(vetor, pesos);
+				media = UtilERRADO.calculaMediaPond(vetor, pesos);
 				saida = "Média Ponderada = " + media;
 				break;
 			case "H":
 				//media = Util.calculaMediaHarmonica(2,4,8);
-				media = Util.calculaMediaHarmonica(vetor);
+				media = UtilERRADO.calculaMediaHarmonica(vetor);
 				saida = "Média Harmônica = " + media;
 				break;
 			case "0":

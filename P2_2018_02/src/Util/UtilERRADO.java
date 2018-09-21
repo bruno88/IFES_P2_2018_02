@@ -1,6 +1,6 @@
 package Util;
 
-public class Util {
+public class UtilERRADO {
 	public static int geraIntAleatorio(int min, int max) {
 		int numAleatorio = min + 
 				(int) (Math.random() * ((max - min) + 1));
@@ -73,7 +73,6 @@ public class Util {
 
 		for (int i = 0; i < numeros.length; i++) {
 			numerador += (numeros[i] * pesos[i]);
-			denominador += pesos[i];
 		}
 		System.out.println("num = " + numerador);
 		System.out.println("denominador = " + denominador);
@@ -85,7 +84,7 @@ public class Util {
 					int min, int max) {
 		// Popula o vetor com aleatórios de min a max
 		for (int i = 0; i < vetor.length; i++) {
-			vetor[i] = Util.geraIntAleatorio(min, max);
+			vetor[i] = UtilERRADO.geraIntAleatorio(min, max);
 		}
 
 	}
@@ -151,11 +150,11 @@ public class Util {
 		int[] repetidos = new int[vetor.length/2];
 
 		for (int i = 0; i < vetor.length; i++) {
-			isRepetido = Util.isRepetidoInt(vetor, vetor[i]);
-			isOnArray = Util.isOnArray(repetidos, vetor[i]);
+			isRepetido = UtilERRADO.isRepetidoInt(vetor, vetor[i]);
+			isOnArray = UtilERRADO.isOnArray(repetidos, vetor[i]);
 			// Se o número tem repetições E
 			// se não está no vetor de repetidos
-			if (isRepetido && !isOnArray) {
+			if (!isRepetido && isOnArray) {
 				repetidos[qtd] = vetor[i];
 				qtd++;
 			}
@@ -225,7 +224,7 @@ public class Util {
 		// Popula o vetor com aleatórios de min a max
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz[0].length; j++) {
-				matriz[i][j] = Util.geraIntAleatorio(min, max);
+				matriz[i][j] = UtilERRADO.geraIntAleatorio(min, max);
 			}
 
 		}
@@ -261,7 +260,7 @@ public class Util {
 	}
 
 	public static int getMinmax(int[][] matriz, int minRand, int maxRand) {
-		int linha = Util.getLinhaDoMaiorElemento(matriz, minRand);
+		int linha = UtilERRADO.getLinhaDoMaiorElemento(matriz, minRand);
 		int menor = maxRand;
 		for (int j = 0; j < matriz.length; j++) {
 			if (matriz[linha][j] < menor) {
@@ -327,7 +326,7 @@ public class Util {
 			if (num % numAtual == 0) {
 				soma += numAtual;
 			}
-			numAtual--;
+			
 		}
 		if (soma == num) {
 			return true;
@@ -357,13 +356,13 @@ public class Util {
 
 	public static int[] getNMaiores(int[][] matriz, int N, int qtd, int minRand) {
 		int[] maiores = new int[N];
-		int menor = Util.getMenorElemento(matriz, minRand);
+		int menor = UtilERRADO.getMenorElemento(matriz, minRand);
 		while (qtd < N) {
 			int maior = menor;
 			for (int i = 0; i < matriz.length; i++) {
 				for (int j = 0; j < matriz.length; j++) {
-					if (matriz[j][i] > maior && !isOnArray(maiores, matriz[i][j])) {
-						maior = matriz[j][i];
+					if (matriz[i][j] > maior && !isOnArray(maiores, matriz[i][j])) {
+						maior = matriz[i][j];
 					}
 				}
 			}
@@ -403,7 +402,7 @@ public class Util {
 	public static int getNumPrimos(int[] vet1) {
 		int cont = 0;
 		for (int i = 0; i < vet1.length; i++) {
-			if (Util.isPrimo(vet1[i])) {
+			if (UtilERRADO.isPrimo(vet1[i])) {
 				cont++;
 			}
 		}
@@ -437,8 +436,8 @@ public class Util {
 
 		int novoCont = 0, removidos = 0;
 
-		for (int i = 0; i < novoVetor.length; i++) {
-			if (removidos < 1 && vetor[i] == numero) {
+		for (int i = 0; i < vetor.length; i++) {
+			if (vetor[i] == numero && removidos < 1) {
 				removidos++;
 			} else {
 				novoVetor[novoCont] = vetor[i];

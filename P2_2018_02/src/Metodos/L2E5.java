@@ -34,9 +34,7 @@ public class L2E5 {
 
 			// Passo 3: Buscar repetidos
 			vetRepetidos = Util.getNumerosRepetidos(vetor);
-			Util.imprimeVetorInt(vetRepetidos);
-			
-			
+			Util.imprimeVetorInt(vetRepetidos);			
 
 			// Imprime o vetor de repetidos
 			System.out.print("Vetor de repetidos: ");
