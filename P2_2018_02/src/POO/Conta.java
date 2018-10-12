@@ -7,15 +7,7 @@ public class Conta {
 	private double saldo, limite;
 	private boolean status;
 
-	// 3 Construtores
-	public Conta() {
-		this.numero = 999;
-		this.titular = null;
-		this.saldo = 0;
-		this.limite = 500;
-		this.status = true;
-	}
-
+	// 2 Construtores
 	public Conta(int numero, String titular, double saldo) {
 		this.numero = numero;
 		this.titular = titular;
@@ -24,7 +16,8 @@ public class Conta {
 		this.status = true;
 	}
 
-	public Conta(int numero, String titular, double saldo, double limite) {
+	public Conta(int numero, String titular, 
+			double saldo, double limite) {
 		this.numero = numero;
 		this.titular = titular;
 		this.saldo = saldo;
@@ -68,6 +61,7 @@ public class Conta {
 
 	public void deposita(double valor) {
 		this.saldo += valor;
+		System.out.println("Depósito bem sucedido");
 	}
 
 	public int saca(double valor) {
@@ -122,6 +116,22 @@ public class Conta {
 		} else {
 			System.out.println("Não foi possível realizar a transferencia!");
 		}
+	}
+	
+	public static Conta pesquisaPorNumero(Conta[] vetor, 
+			int numero) {
+		Conta contaEncontrada = null;
+		boolean encontrada = false;
+		
+		for (int i = 0; !encontrada && i < vetor.length; i++) {
+			if (vetor[i].getNumero() == numero) {
+				contaEncontrada = vetor[i];
+				encontrada = true;
+			}
+		}
+		
+		return contaEncontrada;
+
 	}
 
 	@Override
