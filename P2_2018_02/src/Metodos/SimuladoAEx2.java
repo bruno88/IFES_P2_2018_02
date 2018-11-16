@@ -25,6 +25,7 @@ public class SimuladoAEx2 {
 		Util.imprimeVetorInt(vetorMenorQueN);
 		
 		// Ex 3
+		entrada.close();
 	}
 
 	private static int[] removeMenor(int[] vetor, int N) {

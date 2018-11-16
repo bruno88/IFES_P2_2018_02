@@ -68,6 +68,7 @@ public class SimuladoAEx1 {
 			}
 
 		} while (continuar);
+		entrada.close();
 	}
 
 	private static boolean hasPrimo(int[][] matriz) {

@@ -2,7 +2,6 @@ package Metodos;
 
 import java.util.Scanner;
 
-import Util.Util;
 import Util.UtilERRADO;
 
 public class L2E1 {

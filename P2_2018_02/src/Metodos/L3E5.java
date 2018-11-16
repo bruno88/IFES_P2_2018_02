@@ -13,6 +13,7 @@ public class L3E5 {
 		Scanner entrada = new Scanner(System.in);
 
 		String[][] tabuleiro = new String[tam][tam];
+		
 		try {
 			// Preenche toda a matriz com "_"
 			defineTabuleiro(tabuleiro);
@@ -50,6 +51,7 @@ public class L3E5 {
 		} catch (Exception e) {
 			System.out.println("Erro: " + e);
 		}
+		
 	}
 
 	public static void defineTabuleiro(String[][] tabuleiro) {
