@@ -1,0 +1,4 @@
+MDC de 200 e 65 = 5
+MMC de 200 e 65 = 2600
+MDC de 105 e 245 = 35
+MMC de 105 e 245 = 735

@@ -75,10 +75,9 @@ public class SimuladoAEx1 {
 		boolean hasPrimo = false;
 		for (int i = 0; !hasPrimo && i < matriz.length; i++) {
 			for (int j = 0; !hasPrimo && j < matriz[0].length; j++) {
-				if (Util.isPerfeito(matriz[i][j])) {
+				/*if (Util.isPerfeito(matriz[i][j])) {
 					hasPrimo = true;
-				}
-
+				}*/
 			}
 		}
 

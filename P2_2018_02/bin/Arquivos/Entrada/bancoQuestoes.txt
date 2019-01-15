@@ -1,0 +1,3 @@
+historia do brasil;quem descobriu o brasil?;1.5;
+programacao;o que e uma variavel?;2;
+matematica;quanto e 6x9?;1;

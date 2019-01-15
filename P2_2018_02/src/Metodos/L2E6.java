@@ -53,13 +53,13 @@ public class L2E6 {
 					}
 					break;
 				case 6:
-					int maiorIdade = Util.getMaiorInt(idade);
-					result = "Maior idade = " + maiorIdade;
+					//int maiorIdade = Util.getMaiorInt(idade);
+					//result = "Maior idade = " + maiorIdade;
 					break;
 				case 7:
-					Util.imprimeVetorStr(sexo);
+					/*Util.imprimeVetorStr(sexo);
 					Util.imprimeVetorStr(corOlhos);
-					Util.imprimeVetorStr(corCabelos);
+					Util.imprimeVetorStr(corCabelos);*/
 					Util.imprimeVetorInt(idade);
 					break;
 				case 0:

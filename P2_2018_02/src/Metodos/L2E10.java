@@ -6,12 +6,13 @@ import Util.Util;
 
 public class L2E10 {
 	public static void main(String[] args) {
-		final int tamVetor = 100, tamSubConj = 3;
+		// final int tamVetor = 100
+		final int tamSubConj = 3;
 		// int[] conjunto = new int[tamVetor];
 		// Para Testes:
 		int[] conjunto = { 8, 6, 5, 4, 7, 6, 5, 4, 6, 9, 8, 2, 6, 5, 4 };
 		int[] subconjunto = new int[tamSubConj];
-		int[] vetorDePosicoes = new int[tamVetor];
+		//int[] vetorDePosicoes = new int[tamVetor];
 		Scanner entrada = new Scanner(System.in);
 		int posicao;
 
@@ -43,9 +44,9 @@ public class L2E10 {
 		// EXTRA: Ao invés de retornar 1, retornar todos
 
 		// Verifica se o subconjunto está contido no conjunto
-		vetorDePosicoes = Util.getAllIndexOfSubconjuntoNoConjunto(conjunto, subconjunto);
+		//vetorDePosicoes = Util.getAllIndexOfSubconjuntoNoConjunto(conjunto, subconjunto);
 
-		Util.imprimeVetorInt(vetorDePosicoes);
+		//Util.imprimeVetorInt(vetorDePosicoes);
 
 	}
 
